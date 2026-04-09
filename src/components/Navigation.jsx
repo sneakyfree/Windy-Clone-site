@@ -54,7 +54,7 @@ export default function Navigation() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Clone Your Voice
+              Create Your Twin
             </motion.a>
           </div>
 
@@ -95,7 +95,7 @@ export default function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block mt-4 px-6 py-2 bg-gradient-to-r from-windy-pink to-windy-magenta text-white rounded-lg font-semibold text-center"
               >
-                Clone Your Voice
+                Create Your Twin
               </a>
             </motion.div>
           )}

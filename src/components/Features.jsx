@@ -5,7 +5,7 @@ const features = [
   {
     icon: "&#x1f4ca;",
     title: "Voice Legacy Dashboard",
-    description: "See exactly how much voice data you've accumulated and how close you are to a studio-quality clone. Every recording brings you closer."
+    description: "See exactly how much voice data you've accumulated and how close you are to a studio-quality Voice Twin. Every recording brings you closer."
   },
   {
     icon: "&#x1f3a8;",
@@ -19,18 +19,28 @@ const features = [
   },
   {
     icon: "&#x1f46b;",
-    title: "My Clones",
-    description: "Track training progress, preview finished clones, and manage your digital twins — all in one place. Watch yourself come to life."
+    title: "My Twins",
+    description: "Track training progress, preview finished Voice Twins, and manage your digital selves — all in one place. Watch yourself come to life."
   },
   {
     icon: "&#x1f30d;",
     title: "Speak Any Language As You",
-    description: "Your clone voice works with Windy Traveler. Travel the world speaking your own voice in any language. You, but fluent in everything."
+    description: "Your Voice Twin works with Windy Traveler. Travel the world speaking your own voice in any language. You, but fluent in everything."
   },
   {
     icon: "&#x1fa77;",
     title: "Soul File",
     description: "More than just voice. Capture your personality, speech patterns, vocabulary, and conversational style. The essence of who you are, preserved."
+  },
+  {
+    icon: "&#x1f6e1;&#xfe0f;",
+    title: "Your Data, Your Rules",
+    description: "Download everything. Delete everything. Your voice data stays in your vault, encrypted and sovereign. We never share it without your explicit consent. Full portability, always."
+  },
+  {
+    icon: "&#x1fab0;",
+    title: "Windy Fly Does It For You",
+    description: "Your Windy Fly agent can recommend providers, start your training, and notify you when your Voice Twin is ready — even while you sleep. Hands-free cloning."
   }
 ];
 
@@ -75,7 +85,7 @@ export default function Features() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <FeatureCard key={index} feature={feature} index={index} />
           ))}

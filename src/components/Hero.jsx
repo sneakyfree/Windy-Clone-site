@@ -53,8 +53,8 @@ export default function Hero() {
             <span className="gradient-text">Lives Forever.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Turn your voice recordings into a digital twin that sounds like you,
-            looks like you, and <span className="text-white font-medium">captures who you are</span>.
+            Turn your voice recordings into a Voice Twin that sounds like you,
+            a Digital Avatar that looks like you, and a Soul File that <span className="text-white font-medium">captures who you are</span>.
             One button. Multiple providers. Your legacy, immortalized.
           </p>
 
@@ -65,7 +65,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Start Your Clone — Free
+              Start Your Legacy — Free
             </motion.a>
             <motion.a
               href="#how-it-works"
@@ -85,7 +85,7 @@ export default function Hero() {
             className="flex flex-wrap justify-center gap-8 md:gap-12 text-center"
           >
             {[
-              { value: "6+", label: "Clone Providers" },
+              { value: "6+", label: "Twin Providers" },
               { value: "100+", label: "Languages" },
               { value: "Studio", label: "Quality Voices" },
               { value: "100%", label: "Your Data, Your Voice" },

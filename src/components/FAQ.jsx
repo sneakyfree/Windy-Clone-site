@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 const faqs = [
   {
     question: "What is Windy Clone?",
-    answer: "Windy Clone transforms your accumulated voice recordings, video captures, and transcribed text into a digital twin — a voice clone that sounds like you, a digital avatar that looks like you, and a soul file that captures your personality, speech patterns, and conversational style. Think of it as the place where your voice becomes immortal."
+    answer: "Windy Clone transforms your accumulated voice recordings, video captures, and transcribed text into a digital twin — a Voice Twin that sounds like you, a Digital Avatar that looks like you, and a Soul File that captures your personality, speech patterns, and conversational style. Think of it as the place where your voice becomes immortal."
   },
   {
     question: "How much voice data do I need for a good clone?",
@@ -28,7 +28,19 @@ const faqs = [
   },
   {
     question: 'What\'s a "soul file"?',
-    answer: "A soul file goes beyond voice cloning. It captures your personality — the way you pause before a punchline, your favorite phrases, your conversational rhythm, your vocabulary choices. It's the difference between a voice that sounds like you and a digital twin that feels like you. Soul files are available on the Pro plan and above."
+    answer: "A Soul File goes beyond voice cloning. It captures your personality — the way you pause before a punchline, your favorite phrases, your conversational rhythm, your vocabulary choices. It's the difference between a voice that sounds like you and a digital twin that feels like you. Soul Files are available on the Pro plan and above."
+  },
+  {
+    question: "Can I download or delete all my data?",
+    answer: "Yes, always. Windy Clone gives you full control over your data. You can download everything — voice recordings, trained models, Soul Files — at any time. You can also delete all your data permanently with one click. No lock-in, no hidden retention. Your voice is your property, and we treat it that way."
+  },
+  {
+    question: "Can my Windy Fly agent create my Voice Twin for me?",
+    answer: "Yes! If you have Windy Fly, your AI agent can recommend the best provider based on your data, initiate the training process, and notify you when your Voice Twin is ready — all without you lifting a finger. It can even do it while you sleep. Windy Fly integration is available on the Enterprise plan."
+  },
+  {
+    question: "Is the dashboard really free forever?",
+    answer: "Absolutely. Your Voice Legacy Dashboard, readiness gauges, provider comparison tools, and data tracking are 100% free with no time limit and no credit card required. You only pay when you actively choose to create a Voice Twin through a provider. We believe you should be able to track and understand your voice legacy without any barriers."
   }
 ];
 

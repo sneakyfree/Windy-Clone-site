@@ -6,17 +6,18 @@ const tiers = [
     name: "Free",
     price: "$0",
     period: "forever",
-    description: "See what you've built. Start your legacy.",
+    description: "The full dashboard — yours forever. No credit card. No catch.",
     features: [
-      "Voice Legacy Dashboard",
-      "Voice data tracking & analytics",
-      "Provider comparison tool",
-      "Clone quality estimates",
+      "Voice Legacy Dashboard with readiness gauges",
+      "Voice Twin, Avatar & Soul File tracking",
+      "Provider marketplace & comparison",
+      "Quality estimates for every provider",
+      "Download or delete your data anytime",
       "Community support"
     ],
-    cta: "Get Started Free",
+    cta: "Start Your Legacy — Free",
     highlighted: false,
-    note: "Cloning requires provider fees"
+    note: "You only pay provider fees when you choose to create a twin"
   },
   {
     name: "Pro",
@@ -26,7 +27,7 @@ const tiers = [
     features: [
       "Everything in Free",
       "Priority processing queue",
-      "Advanced clone management",
+      "Advanced Voice Twin management",
       "Soul file generation",
       "Unlimited clone previews",
       "Multi-language voice sync",
@@ -43,10 +44,11 @@ const tiers = [
     description: "For teams and commercial voice operations.",
     features: [
       "Everything in Pro",
-      "Multi-clone management",
+      "Multi-twin management",
       "Commercial licensing rights",
       "Developer tools access",
-      "Team clone provisioning",
+      "Team twin provisioning",
+      "Windy Fly agent integration",
       "Dedicated account manager",
       "Custom integrations"
     ],
@@ -135,7 +137,7 @@ export default function Pricing() {
             Start Free. <span className="gradient-text">Clone When Ready.</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Your voice data is always free to track. When you're ready to create your clone, choose the plan that fits your legacy.
+            The dashboard is free forever — track your Legacy Score, compare providers, and monitor your readiness gauges without paying a cent. When you're ready to create your Voice Twin, choose the plan that fits your legacy.
           </p>
         </motion.div>
 

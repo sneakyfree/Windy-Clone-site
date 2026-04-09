@@ -1,6 +1,7 @@
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import Features from './components/Features'
+import Discover from './components/Discover'
 import HowItWorks from './components/HowItWorks'
 import VoiceLegacy from './components/VoiceLegacy'
 import ProviderShowcase from './components/ProviderShowcase'
@@ -17,6 +18,7 @@ function App() {
       <Navigation />
       <Hero />
       <Features />
+      <Discover />
       <HowItWorks />
       <VoiceLegacy />
       <ProviderShowcase />
