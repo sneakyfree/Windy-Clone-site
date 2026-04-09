@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-windy-darker text-gray-100;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-windy-pink via-windy-magenta to-windy-purple;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-windy-dark via-windy-darker to-black;
+  }
+}
+
+/* Gradient mesh background */
+.gradient-mesh {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(236, 72, 153, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(217, 70, 239, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
+}
+
+/* CTA glow pulse */
+.cta-glow {
+  animation: glow-pulse 2.5s ease-in-out infinite;
+}
+
+/* Subtle card shimmer on hover */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.card-shimmer:hover {
+  background-image: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(236, 72, 153, 0.03) 37%,
+    transparent 63%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out;
+}
+
+/* Stats counter glow */
+.stat-glow {
+  text-shadow: 0 0 30px rgba(236, 72, 153, 0.4);
+}
+
+/* Badge shimmer */
+@keyframes badge-shimmer {
+  0% { background-position: -100% center; }
+  100% { background-position: 200% center; }
+}
+
+.badge-shimmer {
+  background-image: linear-gradient(
+    110deg,
+    rgba(236, 72, 153, 0.8) 0%,
+    rgba(217, 70, 239, 1) 45%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(217, 70, 239, 1) 55%,
+    rgba(236, 72, 153, 0.8) 100%
+  );
+  background-size: 200% 100%;
+  animation: badge-shimmer 3s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pricing card popular ring */
+.popular-ring {
+  position: relative;
+}
+.popular-ring::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #ec4899, #d946ef, #a855f7, #ec4899);
+  background-size: 300% 300%;
+  animation: border-rotate 4s linear infinite;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+@keyframes border-rotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Voice legacy progress glow */
+.legacy-glow {
+  box-shadow: inset 0 1px 30px rgba(236, 72, 153, 0.06);
+}
+
+/* Progress bar fill */
+@keyframes progress-fill {
+  0% { width: 0%; }
+  100% { width: var(--progress); }
+}
+
+.progress-animate {
+  animation: progress-fill 1.5s ease-out forwards;
+}
