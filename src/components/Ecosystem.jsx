@@ -18,7 +18,7 @@ const flywheelSteps = [
     verb: "You connect.",
     hook: "Encrypted multilingual messaging. Your clone voice speaks any language in real-time chat, voice, and video calls.",
     desire: "Your digital twin doesn't just sound like you — it speaks for you, in every language on Earth.",
-    link: "https://windychat.com",
+    link: "https://windychat.ai",
     color: "from-green-500 to-emerald-500",
     ring: "ring-green-500/30"
   },
@@ -68,7 +68,7 @@ const flywheelSteps = [
     verb: "You create.",
     hook: "AI-native code editor. Build with your voice, dictate architecture, pair-program with your digital twin.",
     desire: "Speak your vision. Watch it become code. Your clone understands your programming style.",
-    link: "https://windycode.ai",
+    link: "https://windycode.org",
     color: "from-violet-500 to-indigo-500",
     ring: "ring-violet-500/30"
   },
