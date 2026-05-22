@@ -5,12 +5,12 @@ export default function Footer() {
 
   const windyApps = [
     { name: "Windy Word", url: "https://windyword.com", desc: "Voice to Text" },
-    { name: "Windy Chat", url: "https://windychat.com", desc: "Multilingual Chat" },
+    { name: "Windy Chat", url: "https://windychat.ai", desc: "Multilingual Chat" },
     { name: "Windy Traveler", url: "https://windytraveler.com", desc: "Travel Companion" },
     { name: "Windy Translate", url: "https://windytranslate.com", desc: "Translation Engine" },
     { name: "Windy Mail", url: "https://windymail.ai", desc: "AI Email" },
     { name: "Windy Fly", url: "https://windyfly.ai", desc: "AI Agent" },
-    { name: "Windy Code", url: "https://windycode.ai", desc: "Code Editor" },
+    { name: "Windy Code", url: "https://windycode.org", desc: "Code Editor" },
     { name: "Windy Cloud", url: "https://windycloud.com", desc: "Storage & Sync" },
     { name: "Eternitas", url: "https://eternitas.ai", desc: "Identity & Trust" }
   ];
