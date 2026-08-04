@@ -24,7 +24,7 @@ const steps = [
   {
     number: "03",
     title: "Choose Your Provider",
-    description: "Browse the Twin Studio. Compare ElevenLabs, HeyGen, PlayHT, and more — side by side. See what each specializes in. Pick the one that's right for you.",
+    description: "Browse the Twin Studio. Compare Clone Depot, ElevenLabs, HeyGen, and more — side by side. See what each specializes in. Pick the one that's right for you.",
     icon: "&#x1f50d;"
   },
   {

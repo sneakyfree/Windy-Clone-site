@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Which clone providers do you support?",
-    answer: "Windy Clone is a marketplace, not a single provider. We currently support ElevenLabs, HeyGen, PlayHT, Resemble AI, Descript, and more. Each provider specializes in different aspects of cloning — voice, video, real-time conversation — so you can choose the one that fits your needs. We're constantly adding new providers."
+    answer: "Windy Clone is a marketplace, not a single provider. ElevenLabs is live today, and Clone Depot, HeyGen, Cartesia, MiniMax, Resemble AI and others are listed in the Clone Studio as we bring them online. Each provider specializes in different aspects of cloning — voice, video, real-time conversation — so you can choose the one that fits your needs. We're constantly adding new providers."
   },
   {
     question: "Is my voice data safe?",

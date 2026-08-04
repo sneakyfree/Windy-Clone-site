@@ -10,7 +10,7 @@ const features = [
   {
     icon: "&#x1f3a8;",
     title: "Clone Studio",
-    description: "Compare providers side by side — ElevenLabs, HeyGen, PlayHT, and more. Find the perfect match for your voice, your style, your needs."
+    description: "Compare providers side by side — Clone Depot, ElevenLabs, HeyGen, and more. Find the perfect match for your voice, your style, your needs."
   },
   {
     icon: "&#x1f680;",
