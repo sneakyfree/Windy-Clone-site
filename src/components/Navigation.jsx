@@ -1,6 +1,10 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
+// The dashboard. The platform moved to app.windyclone.ai on 2026-08-04;
+// this site is the marketing hero at the apex.
+const APP_URL = 'https://app.windyclone.ai';
+
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -48,8 +52,14 @@ export default function Navigation() {
                 {link.name}
               </a>
             ))}
+            <a
+              href={APP_URL}
+              className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+            >
+              Sign In
+            </a>
             <motion.a
-              href="#pricing"
+              href={APP_URL}
               className="px-5 py-2 bg-gradient-to-r from-windy-pink to-windy-magenta text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-windy-pink/30 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -91,7 +101,14 @@ export default function Navigation() {
                 </a>
               ))}
               <a
-                href="#pricing"
+                href={APP_URL}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-2 text-gray-400 hover:text-white transition-colors duration-200"
+              >
+                Sign In
+              </a>
+              <a
+                href={APP_URL}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block mt-4 px-6 py-2 bg-gradient-to-r from-windy-pink to-windy-magenta text-white rounded-lg font-semibold text-center"
               >
