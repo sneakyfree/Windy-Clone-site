@@ -1,10 +1,13 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
+// Clone Depot replaces the old "Windy Clone Native" card (removed 2026-08-04).
+// Clone Depot is a separate company with its own partners, so it carries its
+// own brand rather than Windy branding.
 const nativeProvider = {
-  name: "Windy Clone Native",
-  specialty: "Voice + Avatar + Soul",
-  description: "Our own training pipeline — built on Windy Cloud GPU. The highest quality, lowest cost, and deepest integration with the Windy ecosystem. Your data never leaves the family.",
+  name: "Clone Depot",
+  specialty: "Voice + Avatar",
+  description: "One studio for both kinds of twin — your voice and your face. Pick how much polish you want, from a quick first draft to a studio-grade result.",
   strength: "Coming Soon",
   color: "from-windy-pink to-windy-magenta",
   minHours: null,
@@ -16,15 +19,6 @@ const nativeProvider = {
 // /api/v1/providers, so drift here is invisible until someone notices the
 // site advertising something the platform doesn't offer.
 const providers = [
-  {
-    name: "Clone Depot",
-    specialty: "Voice + Avatar",
-    description: "One studio for both kinds of twin — your voice and your face. Pick how much polish you want, from a quick first draft to a studio-grade result.",
-    strength: "Best for doing both at once",
-    color: "from-fuchsia-500 to-pink-500",
-    minHours: null,
-    comingSoon: true
-  },
   {
     name: "ElevenLabs",
     specialty: "Voice Cloning",
@@ -105,7 +99,7 @@ function NativeCard() {
           </div>
           <h3 className="text-2xl font-bold text-white mb-2">{nativeProvider.name}</h3>
           <p className="text-gray-300 leading-relaxed mb-3">{nativeProvider.description}</p>
-          <p className="text-gray-500 text-sm italic">Built on Windy Cloud. Trained with your data. Owned by you.</p>
+          <p className="text-gray-500 text-sm italic">Voice, video and text — all in one place. Trained with your data. Owned by you.</p>
         </div>
         <motion.a
           href="#pricing"
