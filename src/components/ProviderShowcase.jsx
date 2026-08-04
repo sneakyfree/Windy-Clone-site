@@ -1,16 +1,23 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
+// Clone Depot replaces the old "Windy Clone Native" card (removed 2026-08-04).
+// Clone Depot is a separate company with its own partners, so it carries its
+// own brand rather than Windy branding.
 const nativeProvider = {
-  name: "Windy Clone Native",
-  specialty: "Voice + Avatar + Soul",
-  description: "Our own training pipeline — built on Windy Cloud GPU. The highest quality, lowest cost, and deepest integration with the Windy ecosystem. Your data never leaves the family.",
+  name: "Clone Depot",
+  specialty: "Voice + Avatar",
+  description: "One studio for both kinds of twin — your voice and your face. Pick how much polish you want, from a quick first draft to a studio-grade result.",
   strength: "Coming Soon",
   color: "from-windy-pink to-windy-magenta",
   minHours: null,
   isNative: true
 };
 
+// Keep this list in sync with the platform catalog —
+// Windy-Clone/api/app/providers/registry.py. This component does not fetch
+// /api/v1/providers, so drift here is invisible until someone notices the
+// site advertising something the platform doesn't offer.
 const providers = [
   {
     name: "ElevenLabs",
@@ -26,15 +33,20 @@ const providers = [
     description: "Full visual digital twins. Your face, your expressions, your gestures — in video form. Perfect for content creation.",
     strength: "Best for video content",
     color: "from-blue-500 to-cyan-500",
-    minHours: 10
+    minHours: 10,
+    comingSoon: true
   },
+  // PlayHT was removed from the catalog on 2026-07-07 — Meta acqui-hired the
+  // PlayAI team in July 2025 and the platform shut down 2025-12-31. Cartesia
+  // and MiniMax replace it, matching registry.py.
   {
-    name: "PlayHT",
-    specialty: "Voice AI",
-    description: "Ultra-low latency voice generation with conversational AI capabilities. Your Voice Twin that can actually talk back.",
+    name: "Cartesia",
+    specialty: "Voice Cloning",
+    description: "Lightning-fast voice cloning from just a few seconds of audio. Your Voice Twin speaks 40+ languages with near-instant response.",
     strength: "Best for real-time conversation",
     color: "from-emerald-500 to-teal-500",
-    minHours: 3
+    minHours: null,
+    comingSoon: true
   },
   {
     name: "Resemble AI",
@@ -42,15 +54,19 @@ const providers = [
     description: "Custom voice models with fine-grained control over speech style, emotion, and delivery. The director's choice.",
     strength: "Best for fine control",
     color: "from-amber-500 to-orange-500",
-    minHours: 10
+    minHours: 10,
+    comingSoon: true
   },
+  // Descript was never in the platform catalog — it was advertised here only.
+  // Replaced with MiniMax, which is actually in registry.py.
   {
-    name: "Descript",
-    specialty: "Audio Editing",
-    description: "Edit your voice like text. Overdub capabilities let your Voice Twin fill in gaps and fix mistakes seamlessly.",
-    strength: "Best for editing & correction",
+    name: "MiniMax",
+    specialty: "Voice Cloning",
+    description: "Studio-quality voice cloning at the friendliest price. Create a Voice Twin from a short recording and speak in 40+ languages.",
+    strength: "Best value",
     color: "from-rose-500 to-red-500",
-    minHours: 15
+    minHours: null,
+    comingSoon: true
   },
   {
     name: "More Coming",
@@ -83,7 +99,7 @@ function NativeCard() {
           </div>
           <h3 className="text-2xl font-bold text-white mb-2">{nativeProvider.name}</h3>
           <p className="text-gray-300 leading-relaxed mb-3">{nativeProvider.description}</p>
-          <p className="text-gray-500 text-sm italic">Built on Windy Cloud. Trained with your data. Owned by you.</p>
+          <p className="text-gray-500 text-sm italic">Voice, video and text — all in one place. Trained with your data. Owned by you.</p>
         </div>
         <motion.a
           href="#pricing"
@@ -114,7 +130,11 @@ function ProviderCard({ provider, index }) {
         <div className={`inline-flex px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r ${provider.color} bg-clip-text text-transparent border border-white/10`}>
           {provider.specialty}
         </div>
-        {provider.minHours !== null && (
+        {provider.comingSoon ? (
+          <span className="text-[10px] font-semibold text-windy-pink/70 bg-windy-pink/10 border border-windy-pink/25 rounded-full px-2.5 py-0.5 uppercase tracking-wider">
+            Coming Soon
+          </span>
+        ) : provider.minHours !== null && (
           <span className="text-[10px] font-semibold text-windy-magenta/60 bg-windy-magenta/10 border border-windy-magenta/20 rounded-full px-2.5 py-0.5">
             {provider.minHours}+ hrs needed
           </span>
