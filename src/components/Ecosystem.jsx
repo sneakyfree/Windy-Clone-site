@@ -8,7 +8,7 @@ const flywheelSteps = [
     verb: "You speak.",
     hook: "Voice-to-text intelligence powered by AI. Free to start. Every recording you make builds the foundation for your clone.",
     desire: "The more you speak, the more real your clone becomes. Windy Word is where your legacy begins.",
-    link: "https://windyword.com",
+    link: "https://windyword.ai",
     color: "from-blue-500 to-cyan-500",
     ring: "ring-blue-500/30"
   },
